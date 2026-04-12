@@ -1,0 +1,26 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john@mail.com",
+      "registered_at": "2024-01-10"
+    }
+  ],
+  "products": [
+    {
+      "id": 10,
+      "name": "Laptop",
+      "price": 1200.50,
+      "tags": ["electronics", "computer"]
+    }
+  ],
+  "orders": [
+    {
+      "id": 100,
+      "user_id": 1,
+      "product_ids": [10],
+      "total": 1200.50
+    }
+  ]
+}

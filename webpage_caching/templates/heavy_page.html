@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heavy Page Cache Demo</title>
+  <style>
+    :root {
+      --bg: #f8fafc; --card: #fff; --border: #e2e8f0; --text: #0f172a;
+      --muted: #64748b; --primary: #2563eb; --hit: #16a34a; --miss: #dc2626;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Inter, Arial, sans-serif; background: var(--bg); color: var(--text); }
+    header { background: var(--card); border-bottom: 1px solid var(--border); padding: 18px 28px; display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; }
+    .actions { display:flex; gap:10px; flex-wrap:wrap; }
+    .btn { background: var(--primary); color:#fff; padding:9px 14px; border-radius:10px; text-decoration:none; }
+    .container { padding: 24px 28px; display:grid; gap:16px; }
+    .card { background:#fff; border:1px solid var(--border); border-radius:14px; padding:16px; }
+    .stats-grid { display:grid; grid-template-columns: repeat(4, minmax(160px,1fr)); gap:12px; }
+    .stat { border:1px solid var(--border); border-radius:12px; padding:12px; background:#f8fafc; }
+    .label { color:var(--muted); font-size:12px; }
+    .value { font-size:20px; font-weight:700; margin-top:4px; }
+    .status { font-weight:700; padding:4px 10px; border-radius:999px; font-size:12px; display:inline-block; }
+    .status-hit { background:#dcfce7; color:var(--hit); }
+    .status-miss { background:#fee2e2; color:var(--miss); }
+    table { width:100%; border-collapse:collapse; margin-top:8px; background:#fff; }
+    th, td { border:1px solid var(--border); padding:7px 8px; font-size:12px; text-align:left; }
+    th { background:#f1f5f9; position:sticky; top:68px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🚀 Heavy Page (Redis Full-Page Cache)</h1>
+    <div class="actions">
+      <a class="btn" href="/">Reload</a>
+      <a class="btn" href="/invalidate">Invalidate Cache</a>
+      <a class="btn" href="/stats">Redis Stats</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <div class="stats-grid">
+        <div class="stat"><div class="label">Cache Status</div><div class="value">{{CACHE_STATUS}}</div></div>
+        <div class="stat"><div class="label">Total Request Time</div><div class="value">{{TOTAL_MS}} ms</div></div>
+        <div class="stat"><div class="label">Render Time (miss path)</div><div class="value">{{RENDER_MS}} ms</div></div>
+        <div class="stat"><div class="label">Rows Generated</div><div class="value">12,000</div></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 style="margin-top:0;">Generated dataset</h3>
+      <table>
+        <thead><tr><th>#</th><th>Name</th><th>Value</th></tr></thead>
+        <tbody>{{ROWS}}</tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

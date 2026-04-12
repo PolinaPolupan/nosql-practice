@@ -1,0 +1,26 @@
+{
+  "users": [
+    {
+      "id": "abc",
+      "name": 123,
+      "email": "not-email",
+      "registered_at": "yesterday"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Phone",
+      "price": -50,
+      "tags": "electronics"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "product_ids": [],
+      "total": -10
+    }
+  ]
+}

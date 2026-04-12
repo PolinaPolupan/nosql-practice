@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Redis Stats</title>
+  <style>
+    body { font-family: Inter, Arial, sans-serif; margin:0; background:#f8fafc; color:#0f172a; }
+    .wrap { max-width: 900px; margin: 30px auto; padding: 0 16px; }
+    .card { background:#fff; border:1px solid #e2e8f0; border-radius:14px; padding:18px; }
+    .grid { display:grid; grid-template-columns:repeat(4, minmax(130px,1fr)); gap:12px; }
+    .stat { border:1px solid #e2e8f0; border-radius:12px; padding:12px; background:#f8fafc; }
+    .label { color:#64748b; font-size:12px; }
+    .value { font-size:22px; font-weight:700; margin-top:4px; }
+    a { text-decoration:none; color:white; background:#2563eb; padding:9px 14px; border-radius:10px; display:inline-block; margin-top:14px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h2 style="margin-top:0;">📊 Redis Cache Stats</h2>
+      <div class="grid">
+        <div class="stat"><div class="label">Hits</div><div class="value">{{HITS}}</div></div>
+        <div class="stat"><div class="label">Misses</div><div class="value">{{MISSES}}</div></div>
+        <div class="stat"><div class="label">Hit Ratio</div><div class="value">{{HIT_RATIO}}%</div></div>
+        <div class="stat"><div class="label">DB Size</div><div class="value">{{DBSIZE}}</div></div>
+      </div>
+      <a href="/">← Back to demo</a>
+    </div>
+  </div>
+</body>
+</html>
