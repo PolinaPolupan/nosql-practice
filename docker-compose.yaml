@@ -6,6 +6,14 @@ services:
       - "6379:6379"
     volumes:
       - redis_data:/data
+  cassandra:
+    image: cassandra:latest
+    ports:
+      - "9042:9042"
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
 
 volumes:
   redis_data:
