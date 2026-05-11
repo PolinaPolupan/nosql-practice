@@ -1,0 +1,22 @@
+meta {
+  name: Add Question
+  type: http
+  seq: 7
+}
+
+post {
+  url: http://localhost:8000/surveys/11111111-1111-1111-1111-111111111111/questions
+  body: json
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "question_order": 3,
+    "question_text": "Favorite database?",
+    "question_type": "text"
+  }
+}

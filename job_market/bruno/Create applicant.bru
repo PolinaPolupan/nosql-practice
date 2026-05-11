@@ -6,6 +6,15 @@ meta {
 
 post {
   url: http://127.0.0.1:8000/applicants
-  body: none
+  body: json
   auth: none
+}
+
+body:json {
+  {
+      "name": "Ivan Petrov",
+      "age": 22,
+      "vacancyId": "69fc55866a01b430371884b9",
+      "experienceYears": 2
+  }
 }

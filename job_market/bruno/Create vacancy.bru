@@ -6,6 +6,24 @@ meta {
 
 post {
   url: http://127.0.0.1:8000/vacancies
-  body: none
+  body: json
   auth: none
+}
+
+body:json {
+  {
+      "title": "Python Developer",
+      "salary": 5000,
+      "companyId": "69fc55866a01b43037188487",
+      "skills": [
+          {
+              "name": "Python",
+              "level": "middle"
+          },
+          {
+              "name": "MongoDB",
+              "level": "junior"
+          }
+      ]
+  }
 }

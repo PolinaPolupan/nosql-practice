@@ -1,0 +1,151 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="Yh8Av0o_LirrOFNfcWug" name="Page-1">
+    <mxGraphModel dx="1768" dy="938" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="E_User" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="User / Creator" vertex="1">
+          <mxGeometry height="60" width="120" x="450" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="E_Survey" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Survey" vertex="1">
+          <mxGeometry height="60" width="120" x="450" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="E_Question" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Question" vertex="1">
+          <mxGeometry height="60" width="120" x="150" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="E_Response" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Response" vertex="1">
+          <mxGeometry height="60" width="120" x="750" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="E_Answer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Answer" vertex="1">
+          <mxGeometry height="60" width="120" x="450" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="R_Creates" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Creates" vertex="1">
+          <mxGeometry height="70" width="110" x="455" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="R_Contains" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Contains" vertex="1">
+          <mxGeometry height="70" width="110" x="250" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="R_Receives" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Receives" vertex="1">
+          <mxGeometry height="70" width="110" x="660" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="R_Submits" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Submits" vertex="1">
+          <mxGeometry height="70" width="110" x="850" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="R_Includes" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Includes" vertex="1">
+          <mxGeometry height="70" width="110" x="660" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="R_Answers" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="For Question" vertex="1">
+          <mxGeometry height="70" width="110" x="250" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="A_SurveyId" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="&lt;u&gt;survey_id&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="90" x="280" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="A_Title" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="title" vertex="1">
+          <mxGeometry height="40" width="90" x="320" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="A_Desc" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="description" vertex="1">
+          <mxGeometry height="40" width="90" x="600" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="A_CreatedAt" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="created_at" vertex="1">
+          <mxGeometry height="40" width="90" x="620" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="A_QuestionId" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="&lt;u&gt;question_id&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="90" x="40" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="A_QuestionText" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="question_text" vertex="1">
+          <mxGeometry height="40" width="90" x="10" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="A_QuestionType" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="question_type" vertex="1">
+          <mxGeometry height="40" width="90" x="10" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="A_QuestionOrder" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="question_order" vertex="1">
+          <mxGeometry height="40" width="90" x="60" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="A_ResponseId" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="&lt;u&gt;response_id&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="90" x="910" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="A_SubmittedAt" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="submitted_at" vertex="1">
+          <mxGeometry height="40" width="90" x="910" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="A_AnswerText" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="answer_text" vertex="1">
+          <mxGeometry height="40" width="90" x="465" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="A_UserId" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="&lt;u&gt;user_id&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="90" x="610" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="L_User_Creates" edge="1" parent="1" source="E_User" target="R_Creates">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L_Creates_Survey" edge="1" parent="1" source="R_Creates" target="E_Survey">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L_Survey_Contains" edge="1" parent="1" source="E_Survey" target="R_Contains">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L_Contains_Question" edge="1" parent="1" source="R_Contains" target="E_Question">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L_Survey_Receives" edge="1" parent="1" source="E_Survey" target="R_Receives">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L_Receives_Response" edge="1" parent="1" source="R_Receives" target="E_Response">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L_User_Submits" edge="1" parent="1" source="E_User" target="R_Submits">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L_Submits_Response" edge="1" parent="1" source="R_Submits" target="E_Response">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L_Response_Includes" edge="1" parent="1" source="E_Response" target="R_Includes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L_Includes_Answer" edge="1" parent="1" source="R_Includes" target="E_Answer">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L_Answer_Answers" edge="1" parent="1" source="E_Answer" target="R_Answers">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L_Answers_Question" edge="1" parent="1" source="R_Answers" target="E_Question">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L_S_Id" edge="1" parent="1" source="E_Survey" target="A_SurveyId">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L_S_Title" edge="1" parent="1" source="E_Survey" target="A_Title">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L_S_Desc" edge="1" parent="1" source="E_Survey" target="A_Desc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L_S_Created" edge="1" parent="1" source="E_Survey" target="A_CreatedAt">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L_Q_Id" edge="1" parent="1" source="E_Question" target="A_QuestionId">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L_Q_Text" edge="1" parent="1" source="E_Question" target="A_QuestionText">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L_Q_Type" edge="1" parent="1" source="E_Question" target="A_QuestionType">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L_Q_Order" edge="1" parent="1" source="E_Question" target="A_QuestionOrder">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L_R_Id" edge="1" parent="1" source="E_Response" target="A_ResponseId">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L_R_Sub" edge="1" parent="1" source="E_Response" target="A_SubmittedAt">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L_A_Text" edge="1" parent="1" source="E_Answer" target="A_AnswerText">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L_U_Id" edge="1" parent="1" source="E_User" target="A_UserId">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

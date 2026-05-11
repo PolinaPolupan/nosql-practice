@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Black">
+    <option name="sdkName" value="3.11 WSL (UbuntuPolina): (/home/polina/dev/6_semester/nosql/social_network/.venv/bin/python)" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="3.11 WSL (UbuntuPolina): (/home/polina/dev/6_semester/nosql/social_network/.venv/bin/python)" project-jdk-type="Python SDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

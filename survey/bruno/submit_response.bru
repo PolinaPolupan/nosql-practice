@@ -1,0 +1,30 @@
+meta {
+  name: Submit Response
+  type: http
+  seq: 8
+}
+
+post {
+  url: http://localhost:8000/surveys/11111111-1111-1111-1111-111111111111/responses
+  body: json
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "user_id": "66666666-6666-6666-6666-666666666666",
+    "answers": [
+      {
+        "question_id": "cccccccc-cccc-cccc-cccc-cccccccccccc",
+        "answer_text": "Python"
+      },
+      {
+        "question_id": "dddddddd-dddd-dddd-dddd-dddddddddddd",
+        "answer_text": "5"
+      }
+    ]
+  }
+}

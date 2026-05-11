@@ -6,6 +6,14 @@ meta {
 
 post {
   url: http://127.0.0.1:8000/companies
-  body: none
+  body: json
   auth: none
+}
+
+body:json {
+  {
+      "name": "OpenAI",
+      "country": "USA",
+      "industry": "AI"
+  }
 }
