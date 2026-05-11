@@ -1,0 +1,21 @@
+meta {
+  name: Update Survey
+  type: http
+  seq: 9
+}
+
+put {
+  url: http://localhost:8000/surveys/11111111-1111-1111-1111-111111111111
+  body: json
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "title": "Updated Programming Survey",
+    "description": "Updated description"
+  }
+}

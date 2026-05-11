@@ -1,0 +1,22 @@
+meta {
+  name: Create Survey
+  type: http
+  seq: 6
+}
+
+post {
+  url: http://localhost:8000/surveys
+  body: json
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "creator_id": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "title": "Databases Survey",
+    "description": "Survey about databases"
+  }
+}
