@@ -52,3 +52,25 @@ CREATE TABLE IF NOT EXISTS answers_by_response (
 
     PRIMARY KEY (response_id, question_id)
 );
+
+
+SELECT *
+FROM survey_by_id
+WHERE survey_id = 11111111-1111-1111-1111-111111111111;
+
+SELECT *
+FROM surveys_by_creator
+WHERE creator_id = aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa;
+
+SELECT *
+FROM questions_by_survey
+WHERE survey_id = 11111111-1111-1111-1111-111111111111;
+
+SELECT *
+FROM responses_by_survey
+WHERE survey_id = 11111111-1111-1111-1111-111111111111;
+
+SELECT *
+FROM answers_by_response
+WHERE response_id = ffffffff-ffff-ffff-ffff-ffffffffffff
+AND question_id = cccccccc-cccc-cccc-cccc-cccccccccccc;
